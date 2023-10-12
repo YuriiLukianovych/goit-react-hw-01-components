@@ -5,6 +5,7 @@ import FriendList from 'components/FriendList/FriendList';
 import userJson from './data/user.json';
 import statsJson from './data/statistics.json';
 import friendsJson from './data/friends.json';
+import transactionsJson from './data/transactions.json';
 import css from './App.module.scss';
 
 const { username, tag, location, avatar, stats } = userJson;
@@ -22,7 +23,7 @@ export const App = () => {
       <Statistics title="Upload stats" stats={statsJson} />
       <Statistics stats={statsJson} />
       <FriendList friends={friendsJson} />
-      <TransactionHistory />
+      <TransactionHistory items={transactionsJson} />
     </div>
   );
 };
