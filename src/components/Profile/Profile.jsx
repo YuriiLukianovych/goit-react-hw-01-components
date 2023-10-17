@@ -32,6 +32,4 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
   );
 };
 
-const test = 'test_string';
-
 export default Profile;
